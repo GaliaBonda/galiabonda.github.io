@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-  width: 700px;
+  max-width: 700px;
   background-color: rgb(207, 211, 210);
   padding: 35px;
   margin: 40px auto;
@@ -122,9 +122,9 @@ footer {
     float: none;
   }
 
-  .main {
+  /* .main {
     width: 100%;
-  }
+  } */
 
   .contacts li {
     display: block;
