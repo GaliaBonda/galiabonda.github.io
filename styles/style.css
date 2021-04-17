@@ -1,0 +1,132 @@
+body,
+section,
+ul,
+li,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkgray;
+  font-family: "Prompt", sans-serif;
+}
+
+.main {
+  width: 700px;
+  background-color: rgb(207, 211, 210);
+  padding: 35px;
+  margin: 40px auto;
+  border: 2px solid rgb(80, 81, 82);
+  border-radius: 10px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+img {
+  margin-left: 20px;
+  float: right;
+  border-radius: 8px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(80, 81, 82);
+}
+
+ul {
+  list-style-position: inside;
+  margin: 5px 0;
+}
+
+.contacts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts li {
+  display: inline;
+  position: relative;
+  margin-left: 30px;
+}
+
+.contacts li:first-child::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  display: inline-block;
+  background-image: url("../img/mail.png");
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.contacts li:nth-child(2)::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  display: inline-block;
+  background-image: url("../img/telegram.png");
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+.contacts li:last-child::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  display: inline-block;
+  background-image: url("../img/phone.png");
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+
+section {
+  padding: 5px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 8px 0;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  img {
+    float: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .contacts li {
+    display: block;
+  }
+}
